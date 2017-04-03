@@ -1,46 +1,17 @@
 # yagv - Yet Another Gcode Viewer, v0.4
 
-A fast 3D Gcode Viewer for Reprap-style 3D printers, in Python and OpenGL (via pyglet)
+This is the fork of [yagv](1), created by [jonathanw](2).
 
-Designed in Ubuntu Linux; Expected to work in any Linux, Windows or OS X
-
-
-## Requires:
-
-* python 2.x (2.7.3 tested)
-  http://python.org/
-* pyglet 1.1+ (1.1.4 tested)
-  http://www.pyglet.org
-
-## Usage:
-
-yagv [file.gcode]
-* By default, open data/hana_swimsuit_fv_solid_v1.gcode if no file specified
-
-## Features:
-
-* Colors segments according to their type:
-  * extruding
-  * flying the head to the next extrusion point
-  * retracting filament
-  * restoring filament
-* Allows displaying layers independently to examine them.
-* Automagically splits the gcode into layers.
-* Automatic scaling to fit the window.
-* Zoom and rotation (Panning planned).
-
-## Issues:
-
-* Panning for close inspection not yet supported.
-* Retract/restore detected but invisible (0-length segments).
-* Designed with Slic3r output in mind, may not support other slicing programs (suggestions/patches welcome).
-* Some gcodes unsupported, in particular:
-  * G20: Set Units to Inches (usage unknown) 
-  * Arcs (G2 & G3 ?)
+The fork have moved to **[yagv-ng](3)**.
 
 ## FMMT666's Changes:
 
 * Model can now be moved up and down
 * The scene now rotates around the center of the display, not the object.
 * Implemented complete mouse and track-/touchpad functionality. Compatible with Mac.
- 
+
+=> many more to see on new **[yagv-ng](3)** project !
+
+[1]: https://github.com/jonathanwin/yagv
+[2]: http://www.thingiverse.com/jonathanw/about
+[3]: https://github.com/FMMT666/yagv-ng
